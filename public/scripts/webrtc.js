@@ -14,16 +14,39 @@ const CANVAS_WIDTH = canvas.width;
 var context = new webkitAudioContext();
 var analyser = context.createAnalyser();
 
+ var logged =1;
+
+
+function getAverageVolume(array) {
+    var values = 0;
+    var average;
+
+    var length = array.length;
+
+    // get all the frequency amplitudes
+    for (var i = 0; i < length; i++) {
+        values += array[i];
+    }
+
+    average = values / length;
+    return average;
+}
+
 function rafCallback(time) {
   window.webkitRequestAnimationFrame(rafCallback, canvas);
 
   var freqByteData = new Uint8Array(analyser.frequencyBinCount);
   analyser.getByteFrequencyData(freqByteData);
 
+  if(logged<100)
+  {
+    console.log(getAverageVolume(freqByteData))
+    logged++;
+  }
+
   var SPACER_WIDTH = 10;
   var BAR_WIDTH = 5;
   var OFFSET = 100;
-  var CUTOFF = 23;
   var numBars = Math.round(CANVAS_WIDTH / SPACER_WIDTH);
 
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
@@ -46,6 +69,9 @@ function onLoad(e) {
     rafCallback();
   }
 }
+
+
+
 
 window.addEventListener('load', onLoad, false);
 })();

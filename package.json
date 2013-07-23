@@ -1,7 +1,14 @@
 {
-  "name" : "web_rtc",
-  "version" : "0.0.1",
-  "dependencies" : {
-    "express" : "3.x"
+  "name": "web_rtc",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x"
+  },
+  "subdomain": "paulgcampbell.sunflower",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
   }
 }
