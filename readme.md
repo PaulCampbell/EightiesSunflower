@@ -3,7 +3,7 @@
 
 ## WTF?
 
-Stick on your favorite song, go here in a recent version of Chrome:
+Stick on your favorite song, go here in a _recent version of Chrome_:
 
 http://paulgcampbell.sunflower.jit.su/
 

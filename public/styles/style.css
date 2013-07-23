@@ -1,16 +1,7 @@
 
-body > section {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
-  -webkit-justify-content: center;
-  -webkit-align-content: center;
-  -webkit-align-items: center;
-  box-sizing: border-box;
-  height: 100%;
-  -webkit-perspective: 800;
-  -webkit-transform-style: preserve-3d;
+body {
+    font-family: helvetica, sans-serif;
 }
-
 
 .flex-container {
 	display: -moz-box;
