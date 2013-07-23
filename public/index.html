@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>WebRTC</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-    <h1>WebRTC Audio Stream Visualization</h1>
-    <p>(use chrome)</p>
-    <p></p>
+  <head>
+    <title>Dancing Sunflower</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>WebRTC Audio Stream Dancing Sunflower</h1>
+    <p>(Whack on a record and turn up the volume)</p>
+    <div class="flex-container">
+      <div class="col-1">
+        <canvas id="sunflower" class="sunflower" width="200" height="300"></canvas>
+      </div>
+      <div class="col-2">
+        <canvas id="graphicEqualiser" class="graphicEqualiser"></canvas>
+      </div>
 
-    <canvas id="fft" class="fft" width="512" height="200"></canvas>
-        <script src="scripts/webrtc.js"></script>
-    </body>
+    </div>
+    <script src="scripts/webrtc.js"></script>
+  </body>
 </html>
 

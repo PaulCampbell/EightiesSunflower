@@ -10,7 +10,28 @@ body > section {
   -webkit-perspective: 800;
   -webkit-transform-style: preserve-3d;
 }
-section > * {
-  display: -webkit-flex;
-  -webkit-align-items: center;
+
+
+.flex-container {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+
+.col-1 {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+
+}
+
+.col-2 {
+	-moz-box-flex: 2;
+	-webkit-box-flex: 2;
+	box-flex: 2;
+    border:solid 1px red;
 }
