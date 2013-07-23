@@ -55,6 +55,21 @@
     sunflowerContext.lineWidth = 3;
     sunflowerContext.strokeStyle = '#003300';
     sunflowerContext.stroke();
+
+    // eighties sunglasses (shades if you will)
+    sunflowerContext.fillStyle = 'black';
+    sunflowerContext.fillRect (68,22,30,20);
+
+    sunflowerContext.fillStyle = 'black';
+    sunflowerContext.fillRect (102,22,30,20);
+
+    sunflowerContext.fillStyle = 'black';
+    sunflowerContext.fillRect (80,22,30,7);
+
+    // flower pot
+    sunflowerContext.fillStyle = 'brown';
+    sunflowerContext.fillRect (60,200,80,85);
+
   }
 
   function drawSunflower() {
@@ -82,6 +97,8 @@
     sunflowerContext.lineWidth = 5;
     sunflowerContext.strokeStyle = 'green';
     sunflowerContext.stroke();
+
+
 
   }
 
